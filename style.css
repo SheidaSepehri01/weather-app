@@ -1,9 +1,10 @@
 body {
-  background: #6d4c3d url(images/a.jpg) no-repeat fixed;
+  background-image: linear-gradient(135deg, #52E5E7 10%, #130CB7 100%);
   position: relative;
   background-size: cover;
   scroll-behavior: smooth;
 }
+
 html,
 body {
   height: 100vh;
@@ -12,6 +13,7 @@ body {
   padding: 0;
   overflow: hidden;
 }
+
 .main {
   margin: 0;
   padding: 0;
@@ -20,15 +22,20 @@ body {
   width: 100vw;
   position: relative;
 }
+
 /*----------------big weather box--------------*/
 .container {
+  display: grid;
+  grid-template-columns: auto;
   color: #fff;
-  background: #796c61c2;
   text-align: center;
-  /* position: relative; */
-  /* top: 5%; */
-  /* left: 53%; */
-  /* transform: translate(-50%, -50%); */
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.7px);
+  -webkit-backdrop-filter: blur(3.7px);
+  border: 1px solid rgba(255, 255, 255, 0.29);
   border: 1px rgb(118, 118, 255);
   border-radius: 2em;
   width: 45%;
@@ -36,6 +43,7 @@ body {
   margin: 1em 2em;
   float: right;
 }
+
 .sunset {
   list-style: none;
   position: relative;
@@ -44,28 +52,34 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0;
-  height:5em ;
+  height: 5em;
 }
+
 .sunset li {
   margin: 0em;
   color: #fff;
   display: contents;
 }
-.sunset-icon{
+
+.sunset-icon {
   width: 5em;
   margin: 0;
   padding: 0;
 }
+
 .sunset i {
   font-size: calc(1.5em + 1vw);
 }
+
 .description {
   margin-top: 0.5em;
 }
+
 .bi::before,
 [class*="bi-"] {
   font-size: 3rem;
 }
+
 .description h1 {
   font-size: calc(2rem + 1vw);
 }
@@ -73,6 +87,7 @@ body {
 .temperature h1 {
   font-size: calc(4rem + 1vw);
 }
+
 .temperature {
   list-style: none;
   display: flex;
@@ -82,25 +97,35 @@ body {
   padding: 0.5rem;
   border-bottom: 2px dashed;
 }
+
 .range {
   font-size: calc(1.7em + 1vw);
   margin: 0em;
   color: #ffffff94;
 }
+
 .condition {
   padding: 0.5rem;
   text-align: left;
   font-size: calc(1em + 1vw);
   border-bottom: 2px dashed;
 }
+
 .icon::before {
   padding: 0px 0px 0.4em 0px;
 }
+
 /*---------------small weather box--------------------------------------*/
 .container-wg {
   display: flex;
-  background-color: #cda183eb;
-  /* transform: translate(-50%, -50%); */
+  gap: 2em;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.7px);
+  -webkit-backdrop-filter: blur(3.7px);
+  border: 1px solid rgba(255, 255, 255, 0.29);
   border: 1px rgb(118, 118, 255);
   border-radius: 2em;
   width: 40%;
@@ -111,6 +136,7 @@ body {
   min-width: 500px;
   float: left;
 }
+
 .description-wg {
   color: #fff;
   flex: 2 2em;
@@ -120,10 +146,12 @@ body {
   padding-left: 1em;
   text-align: right;
 }
+
 .condition-wg {
   margin: 0;
 
 }
+
 .icon-box {
   margin: 1em;
   display: flex;
@@ -136,9 +164,11 @@ body {
   align-self: center;
   width: 35%;
 }
-.icon-box h1{
+
+.icon-box h1 {
   font-size: calc(3rem + 1vw);
 }
-.icon-box p{
+
+.icon-box p {
   margin: 0;
 }

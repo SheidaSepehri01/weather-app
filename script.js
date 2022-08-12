@@ -1,4 +1,4 @@
-import { iconChanger, time } from "./module/utile.js";
+import { time } from "./module/utile.js";
 //console.log(time())
 fetch(
   "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/tehran?unitGroup=metric&key=E269F3JEX85HLTGXMEDL3CGGJ&contentType=json",
