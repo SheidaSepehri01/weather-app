@@ -1,5 +1,4 @@
 import { time } from "./module/utile.js";
-//console.log(time())
 fetch(
   "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/tehran?unitGroup=metric&key=E269F3JEX85HLTGXMEDL3CGGJ&contentType=json",
   {
@@ -8,14 +7,11 @@ fetch(
   }
 )
   .then((response) => {
-    //console.log(response.json());
     return response.json();
   })
   .then((data) => {
     console.log(data);
     var card = " ";
-    //iconChanger(data.days[0].conditions);
-    //console.log(icon);
     card = ` <div class="description">
   <h1>${data.address.toUpperCase()}</h1>
 </div>
@@ -64,7 +60,6 @@ fetch(
   }
 )
   .then((response) => {
-    //console.log(response.json());
     return response.json();
   })
   .then((data) => {

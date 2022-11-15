@@ -22,14 +22,8 @@ body {
   width: 100vw;
   position: relative;
 }
-
-/*----------------big weather box--------------*/
-.container {
-  display: grid;
-  grid-template-columns: auto;
-  color: #fff;
-  text-align: center;
-  /* From https://css.glass */
+.container ,.container-wg{
+    /* From https://css.glass */
   background: rgba(255, 255, 255, 0.19);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -38,6 +32,13 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.29);
   border: 1px rgb(118, 118, 255);
   border-radius: 2em;
+}
+/*----------------big weather box--------------*/
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  color: #fff;
+  text-align: center;
   width: 45%;
   height: 94%;
   margin: 1em 2em;
@@ -119,18 +120,7 @@ body {
 .container-wg {
   display: flex;
   gap: 2em;
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.19);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3.7px);
-  -webkit-backdrop-filter: blur(3.7px);
-  border: 1px solid rgba(255, 255, 255, 0.29);
-  border: 1px rgb(118, 118, 255);
-  border-radius: 2em;
   width: 40%;
-  /* top: 19%; */
-  /* left: 19%; */
   margin: 1em 2em;
   color: #fff;
   min-width: 500px;

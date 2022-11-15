@@ -2,12 +2,12 @@
 
   .container {
     min-width: 95%;
+    height: 100vh;
+    padding: 3em;
     border: 0;
-    margin: 9em 0em;
     box-shadow: none;
     top: 32%;
     left: 50%;
-    min-height: 700px;
     position: absolute;
     transform: translate(-50%, -50%);
 
@@ -36,9 +36,9 @@
 
   .container-wg {
     min-width: 95%;
-    margin: 3em 0em;
+    margin:11% 0;
     box-shadow: none;
-    top: 122%;
+    top: 109%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -48,7 +48,7 @@
 @media only screen and (max-width: 1150px) {
   .container {
     border: 0;
-    margin: 12em 0em;
+    margin: 11% 0px;
     box-shadow: none;
     top: 32%;
     left: 50%;
@@ -59,7 +59,7 @@
   }
 
   .container-wg {
-    margin: 3em 0em;
+    margin: 11% 0;
     box-shadow: none;
     top: 122%;
     left: 50%;
