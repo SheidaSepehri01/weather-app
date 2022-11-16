@@ -1,16 +1,18 @@
-@media only screen and (max-width: 945px) {
-
+@media only screen and (max-width: 800px) {
+  .main {
+    display: grid;
+    grid-gap: 0;
+    justify-items: center;
+  }
   .container {
     min-width: 95%;
     height: 100vh;
     padding: 3em;
+    margin: 0;
     border: 0;
     box-shadow: none;
-    top: 32%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-
+    top: 1em;
+    position: relative;
   }
 
   .sunset {
@@ -30,40 +32,40 @@
   .condition {
     font-size: calc(2em + 1vw);
   }
-  .sunset{
+  .sunset {
     margin-top: 1em;
   }
 
   .container-wg {
     min-width: 95%;
-    margin:11% 0;
+    margin: 11% 0;
     box-shadow: none;
-    top: 109%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
+    top: 1em;
+    position: relative;
   }
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (min-width: 800px) and (max-width: 1150px) {
+  .main {
+    display: grid;
+    grid-gap: 0;
+    justify-items: center;
+  }
   .container {
+    min-width: 45%;
     border: 0;
-    margin: 11% 0px;
+    margin: 0px;
     box-shadow: none;
-    top: 32%;
-    left: 50%;
+    top: 1em;
     min-height: 620px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-
+    position: relative;
   }
 
   .container-wg {
-    margin: 11% 0;
+    min-width: 45%;
+
     box-shadow: none;
-    top: 122%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
+    top: 2em;
+    position: relative;
   }
 }

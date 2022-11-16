@@ -1,4 +1,5 @@
-import { time } from "./module/utile.js";
+import { backgroundTheme, time } from "./module/utile.js";
+
 fetch(
   "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/tehran?unitGroup=metric&key=E269F3JEX85HLTGXMEDL3CGGJ&contentType=json",
   {
@@ -10,7 +11,10 @@ fetch(
     return response.json();
   })
   .then((data) => {
-    console.log(data);
+    console.log(  Number(data.currentConditions.sunset.split("", 2).join("")));
+    let body = document.querySelector("body");
+    backgroundTheme(data.currentConditions.sunset , body);
+
     var card = " ";
     card = ` <div class="description">
   <h1>${data.address.toUpperCase()}</h1>
