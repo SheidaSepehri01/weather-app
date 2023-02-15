@@ -37,11 +37,7 @@
   }
 
   .container-wg {
-    min-width: 95%;
-    margin: 11% 0;
-    box-shadow: none;
-    top: 1em;
-    position: relative;
+    display: none;
   }
 }
 
@@ -63,9 +59,15 @@
 
   .container-wg {
     min-width: 45%;
-
+    align-items: flex-start;
+    justify-content: center;
     box-shadow: none;
     top: 2em;
     position: relative;
+  }
+  .container-wg .description-wg {
+    height: 100%;
+    align-self: center;
+
   }
 }

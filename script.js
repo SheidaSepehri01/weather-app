@@ -52,7 +52,7 @@ fetch(
     time(".description");
   })
   .catch((err) => {
-    console.error(err);
+    console.log(err);
   });
 
 //------------------small weather box-----------------------------------
@@ -89,5 +89,6 @@ fetch(
     time(".description-wg");
   })
   .catch((err) => {
-    console.error(err);
+    console.log(err);
   });
+//----------------------install app ------------------

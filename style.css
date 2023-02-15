@@ -139,7 +139,10 @@ body {
 
 .condition-wg {
   margin: 0;
-
+display: flex;
+gap: 0;
+align-items: center;
+justify-content: center;
 }
 
 .icon-box {
@@ -152,7 +155,8 @@ body {
   padding: 0.5rem;
   margin: 0;
   align-self: center;
-  width: 35%;
+  width: 50%;
+  height: 100%;
 }
 
 .icon-box h1 {
