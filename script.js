@@ -1,5 +1,6 @@
-import { backgroundTheme, time } from "./module/utile.js";
+import { backgroundTheme, time, widgetMood } from "./module/utile.js";
 
+const main = document.querySelector(".main")
 fetch(
   "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/tehran?unitGroup=metric&key=E269F3JEX85HLTGXMEDL3CGGJ&contentType=json",
   {
@@ -91,4 +92,13 @@ fetch(
   .catch((err) => {
     console.log(err);
   });
-//----------------------install app ------------------
+//----------------------widget mood------------------
+function createWidgetBTN(){
+ let Btn = document.createElement('button')
+ Btn.classList.add('WGBtn')
+ Btn.classList.add('glass')
+ Btn.innerText = 'widget mood'
+ Btn.addEventListener('click',widgetMood)
+ main.appendChild(Btn)
+}
+createWidgetBTN()

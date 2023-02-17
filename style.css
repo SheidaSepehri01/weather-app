@@ -22,7 +22,7 @@ body {
   position: relative;
   transition: .5s;
 }
-.container ,.container-wg{
+.container ,.container-wg,.glass{
     /* From https://css.glass */
   background: rgba(255, 255, 255, 0.19);
   border-radius: 16px;
@@ -32,6 +32,17 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.29);
   border: 1px rgb(118, 118, 255);
   border-radius: 2em;
+}
+.WGBtn{
+color:#ffffff;
+border-radius: 50%;
+width: 100px;
+height: 100px;
+z-index: 99;
+font-weight: 600;
+position: absolute;
+bottom: 1em;
+left: 1.5em;
 }
 /*----------------big weather box--------------*/
 .container {
