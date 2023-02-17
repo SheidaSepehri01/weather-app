@@ -23,7 +23,7 @@ function backgroundTheme(sunset, element) {
 }
 function widgetMood() {
   console.log("works");
-  widget = window.open(
+  let widget = window.open(
     "https://sheidasepehri01.github.io/weatherApi/",
     "",
     "width=450, height=150"
