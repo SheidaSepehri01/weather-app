@@ -26,6 +26,6 @@ function widgetMood() {
   let widget = window.open(
     "https://sheidasepehri01.github.io/weatherApi/",
     "",
-    "width=450, height=150"
+    "width=550, height=150"
   );
 }
